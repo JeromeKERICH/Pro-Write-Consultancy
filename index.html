@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro-Write Consultancy</title>
+    <title>Web Master</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
 </head>
@@ -11,21 +11,21 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="#"><h1>Pro-Write Consultancy</h1></a>
+                <a href="#"><h1>The Web Master</h1></a>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li class="dropdown">
                     <a href="#" class="drop-btn">Services <span class="arrow">&#9662;</span></a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Web Development</a></li>
+                        <li><a href="service.html">Web Development</a></li>
                         <li><a href="#">Tech & IT Services</a></li>
                         <li><a href="#">Copywriting & Content Services</a></li>
                         <li><a href="#">Online Learning & Coaching</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Courses</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="learn.html">Courses</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -38,7 +38,18 @@
 
 
     <!-- Hero Section -->
-   
+     <section class="hero-container">
+        <div class="hero">
+            <div class="hero-content">
+              <h1>Empowering Your Business with Digital Innovation</h1>
+              <p>Empowering your business with digital innovation means using technology to streamline processes, enhance customer experiences, and drive growth. By adopting digital tools, businesses can improve efficiency, stay competitive, and open new opportunities. From automating tasks to using data-driven insights, digital innovation boosts productivity and helps businesses adapt to changing customer needs and trends, ensuring long-term success.</p>
+              <div class="cta-buttons">
+                <a href="#services" class="btn primary-btn">Discover Our Services</a>
+                <a href="#contact" class="btn secondary-btn">Contact Us Today</a>
+              </div>
+            </div>
+          </div>          
+     </section>
     
 
     <!--Floating CTA-->
@@ -117,13 +128,14 @@
                 <i class="fa fa-code"></i>
                 <h3>Web Development</h3>
                 <p>Building dynamic websites and platforms.</p>
+         
                 <div id="web-development" class="service-list">
                     <ul> 
                         <li><i class="fas fa-check-circle"></i> E-commerce Websites</li>
                         <li><i class="fas fa-check-circle"></i> Web Optimization & SEO</li>
                         <li><i class="fas fa-check-circle"></i> Web Maintenance & Support</li>
                         <li><i class="fas fa-check-circle"></i> Responsive Web Design</li>
-                        <a href="#">Learn More</a>
+                        
                     </ul>
                 </div>
             </div>
@@ -132,13 +144,14 @@
                 <i class="fa fa-cogs"></i>
                 <h3>Tech & IT Services</h3>
                 <p>Providing technology support and consulting.</p>
+                
                 <div id="tech-services" class="service-list">
                     <ul>
                         <li><i class="fas fa-check-circle"></i> Computer Maintenance</li>
                         <li><i class="fas fa-check-circle"></i> Software Installation</li>
                         <li><i class="fas fa-check-circle"></i> Tech Support</li>
                         <li><i class="fas fa-check-circle"></i> Consulting</li>
-                        <a href="#">Learn More</a>
+                        
                     </ul>
                 </div>
             </div>
@@ -147,12 +160,13 @@
                 <i class="fa fa-pen"></i>
                 <h3>Copywriting & Content Services</h3>
                 <p>Crafting compelling copy and content.</p>
+              
                 <div id="copywriting" class="service-list">
                     <ul>
                         <li><i class="fas fa-check-circle"></i> Blog & Article Writing</li>
                         <li><i class="fas fa-check-circle"></i> Copywriting for Websites</li>
                         <li><i class="fas fa-check-circle"></i> Ad Copywriting</li>
-                        <a href="#">Learn More</a>
+                        
                     </ul>
                 </div>
             </div>
@@ -161,12 +175,13 @@
                 <i class="fa fa-graduation-cap"></i>
                 <h3>Online Learning & Coaching</h3>
                 <p>Guiding you through tech skills and development.</p>
+                
                 <div id="online-learning" class="service-list">
                     <ul>
                         <li><i class="fas fa-check-circle"></i> Web Development Courses</li>
                         <li><i class="fas fa-check-circle"></i> Computer Masterclass</li>
                         <li><i class="fas fa-check-circle"></i> LinkedIn Coaching</li>
-                        <a href="#">Learn More</a>
+                        
                     </ul>
                 </div>
             </div>
@@ -176,93 +191,7 @@
 
     <!--Calculator section-->
 
-    <section class="section_cal">
-        <div class="cost-calculator-container">
-            <h2>Service Cost Calculator</h2>
-            <p>Estimate the cost of services based on your specific needs. Select a service and answer the questions below.</p>
-        
-            <!-- Service Selection -->
-            <form id="cost-calculator-form" onsubmit="sendEmail(event)">
-                <div class="form-group">
-                    <label for="service-select">Choose a Service:</label>
-                    <select id="service-select" onchange="showServiceQuestions()">
-                        <option value="">Select a service...</option>
-                        <option value="web-dev">Web Development</option>
-                        <option value="tech-it">Tech & IT Services</option>
-                        <option value="copywriting">Copywriting</option>
-                        <option value="online-learning">Online Learning & Coaching</option>
-                    </select>
-                </div>
-        
-                <!-- Web Development Questions -->
-                <div id="web-dev-questions" class="service-questions">
-                    <h3>Web Development Questions</h3>
-                    <div class="form-group">
-                        <label for="ecommerce-web">Do you need an E-commerce website?</label>
-                        <input type="checkbox" id="ecommerce-web" value="1000" />
-                    </div>
-                    <div class="form-group">
-                        <label for="seo">Do you need SEO optimization?</label>
-                        <input type="checkbox" id="seo" value="500" />
-                    </div>
-                    <div class="form-group">
-                        <label for="web-maintenance">Do you require web maintenance and support?</label>
-                        <input type="checkbox" id="web-maintenance" value="300" />
-                    </div>
-                    <div class="form-group">
-                        <label for="responsive-design">Do you need responsive web design?</label>
-                        <input type="checkbox" id="responsive-design" value="400" />
-                    </div>
-                </div>
-        
-                <!-- Tech & IT Services Questions -->
-                <div id="tech-it-questions" class="service-questions">
-                    <h3>Tech & IT Services Questions</h3>
-                    <div class="form-group">
-                        <label for="computer-maintenance">Do you need computer maintenance?</label>
-                        <input type="checkbox" id="computer-maintenance" value="200" />
-                    </div>
-                    <div class="form-group">
-                        <label for="software-install">Do you need software installation?</label>
-                        <input type="checkbox" id="software-install" value="100" />
-                    </div>
-                </div>
-        
-                <!-- Copywriting Questions -->
-                <div id="copywriting-questions" class="service-questions">
-                    <h3>Copywriting Questions</h3>
-                    <div class="form-group">
-                        <label for="blog-articles">Number of blog or article pages (per page):</label>
-                        <input type="number" id="blog-articles" value="0" min="0" />
-                    </div>
-                    <div class="form-group">
-                        <label for="ad-copy">Do you need ad copywriting?</label>
-                        <input type="checkbox" id="ad-copy" value="150" />
-                    </div>
-                </div>
-        
-                <!-- Online Learning & Coaching Questions -->
-                <div id="online-learning-questions" class="service-questions">
-                    <h3>Online Learning & Coaching Questions</h3>
-                    <div class="form-group">
-                        <label for="web-courses">Do you need web development courses?</label>
-                        <input type="checkbox" id="web-courses" value="300" />
-                    </div>
-                </div>
-        
-                <!-- Estimate Total Cost -->
-                <button type="button" onclick="calculateCost()">Estimate Cost</button>
-                <div id="estimated-cost">Estimated Total: $0</div>
-        
-                <!-- Submit and Clear Buttons -->
-                
-                <button type="submit" class="submit-btn">Send Estimate to My Email</button>
-                <button type="button" onclick="clearForm()" class="clear-btn">Clear</button>
-            </form>
-        </div>
-
-        
-    </section>
+    
 
 
     <!--FAQ-->
@@ -333,10 +262,10 @@
                     <span>Founder, Abthan Technologies</span>
                 </div>
                 <div class="testimonial">
-                    <img src="person3.jpg" alt="Person 3">
+                    <img src="images/carol.jpeg" alt="Person 3">
                     <p>"Excellent copywriting services. The ads performed better and drove more conversions than expected!"</p>
-                    <h4>Emily R.</h4>
-                    <span>Marketing Director, AdsPro</span>
+                    <h4>Carol K.</h4>
+                    <span>Founder, Sky My limit</span>
                 </div>
                 <div class="testimonial">
                     <img src="person4.jpg" alt="Person 4">
@@ -391,9 +320,9 @@
           
           <div class="footer-section">
             <h3>Follow Us</h3>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100094034859883"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/prowrite_consultancy/"><i class="fab fa-linkedin"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>

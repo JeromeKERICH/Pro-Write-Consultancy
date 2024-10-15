@@ -29,9 +29,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
-
-
 //slide
 
 let slideIndex = 0;
@@ -291,3 +288,12 @@ faqItems.forEach(item => {
         item.classList.toggle('active');
     });
 });
+
+
+
+//service section
+
+function toggleDetails(serviceId) {
+    var card = document.getElementById(serviceId);
+    card.classList.toggle('active');
+}

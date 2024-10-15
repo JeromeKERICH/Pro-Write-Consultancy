@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career and Personal Development</title>
+  <link rel="stylesheet" href="coursedetails.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><h1>he Web Master</h1></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="drop-btn">Services <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="service.html">Web Development</a></li>
+                        <li><a href="#">Tech & IT Services</a></li>
+                        <li><a href="#">Copywriting & Content Services</a></li>
+                        <li><a href="#">Online Learning & Coaching</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="learn.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="course-details-container">
+            <h2>Career and Personal Development</h2>
+            <p>Boost your career and personal growth by learning essential skills like goal setting, time management, and professional communication. This course will help you become more productive, confident, and capable of achieving your goals.</p>
+        
+            <h3>What You'll Learn:</h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Effective Goal Setting Techniques</li>
+              <li><i class="fas fa-check-circle"></i> Time Management and Prioritization</li>
+              <li><i class="fas fa-check-circle"></i> Building Professional Communication Skills</li>
+              <li><i class="fas fa-check-circle"></i> Personal Branding and Networking</li>
+              <li><i class="fas fa-check-circle"></i> Self-Motivation and Career Planning</li>
+            </ul>
+        
+            <h3>Course Duration: 6 Weeks</h3>
+            <p><strong>Price: $250</strong></p>
+        
+            <h3>Instructor: Emmanuel Kerich</h3>
+            <p>Emmanuel is a career coach and web development specialist, with experience in helping individuals excel in their careers through structured coaching and development programs.</p>
+        
+            <!-- Registration Form -->
+            <h3>Register for This Course</h3>
+            <form action="/process-payment" method="POST">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="payment-method">Select Payment Method:</label>
+              <select id="payment-method" name="payment-method" required>
+                <option  type="radio" name="payment-method" value="mpesa" required>M-Pesa</option>
+                <option type="radio" name="payment-method" value="stripe" required>Stripe</option>
+                <option type="radio" name="payment-method" value="paypal" required>PayPal</option>
+              </select>
+        
+              <button type="submit">Proceed to Payment</button>
+            </form>
+        
+            <a href="learn.html" class="back-link">Back to Courses</a>
+          </div>
+    </section>
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>

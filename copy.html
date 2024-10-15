@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copywriting Mastery</title>
+  <link rel="stylesheet" href="coursedetails.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><h1>Pro-Write Consultancy</h1></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="drop-btn">Services <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="service.html">Web Development</a></li>
+                        <li><a href="#">Tech & IT Services</a></li>
+                        <li><a href="#">Copywriting & Content Services</a></li>
+                        <li><a href="#">Online Learning & Coaching</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="learn.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="course-details-container">
+            <h2>Copywriting Mastery</h2>
+            <p>Master the art of persuasive writing and become an expert in creating compelling copy that converts. Whether it's for web content, emails, or ads, learn techniques that will boost your writing skills and help you land high-paying clients.</p>
+        
+            <h3>What You'll Learn:</h3>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Understanding the Psychology of Persuasion</li>
+              <li><i class="fas fa-check-circle"></i> How to Write for Different Mediums (Web, Emails, Ads)</li>
+              <li><i class="fas fa-check-circle"></i> SEO Copywriting Techniques</li>
+              <li><i class="fas fa-check-circle"></i> Building a Portfolio to Attract Clients</li>
+              <li><i class="fas fa-check-circle"></i> Freelancing Strategies in Copywriting</li>
+            </ul>
+        
+            <h3>Course Duration: 4 Weeks</h3>
+            <p><strong>Price: $200</strong></p>
+        
+            <h3>Instructor: Emmanuel Kerich</h3>
+            <p>Emmanuel is a seasoned copywriter and business consultant who has worked with solopreneurs and startups, helping them grow their businesses through effective content strategies.</p>
+        
+            <!-- Registration Form -->
+            <h3>Register for This Course</h3>
+            <form action="process-payment.php" method="POST">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="payment-method">Select Payment Method:</label>
+              <select id="payment-method" name="payment-method" required>
+                <option  type="radio" name="payment-method" value="mpesa" required>M-Pesa</option>
+                <option type="radio" name="payment-method" value="stripe" required>Stripe</option>
+                <option type="radio" name="payment-method" value="paypal" required>PayPal</option>
+              </select>
+        
+              <button type="submit">Proceed to Payment</button>
+            </form>
+        
+            <a href="learn.html" class="back-link">Back to Courses</a>
+          </div>
+        
+    </section>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>

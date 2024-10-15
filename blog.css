@@ -1,4 +1,4 @@
-
+/* Basic Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +7,11 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
 }
+  
 
-header {
+  header {
     width: 100%;
     background-color: #333;
     position: fixed;
@@ -173,81 +175,194 @@ header {
 }
 
 
-/* General Styling */
-.courses-section {
+
+
+section {
     margin-top: 70px;
-    background-color: #f9f9f9;
-  }
+}
 
-  .container {
-    padding: 50px;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: rgb(44, 92, 107);
-  }
-  
-  /* Courses Grid */
-  .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-  
-  /* Course Card */
-  .course-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.blog-container {
+    
+    margin: 0 auto;
     padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
-  .course-card img {
-    max-width: 100%;
-    border-radius: 10px 10px 0 0;
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(44, 92, 107);
+    margin-bottom: 20px;
   }
   
-  .course-card h3 {
-    font-size: 22px;
-    margin: 15px 0;
+  /* Flexbox Grid */
+  .blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-between;
   }
   
-  .course-card p {
-    font-size: 16px;
-    color: #555;
+  .blog-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    width: calc(50% - 10px); 
+    box-sizing: border-box; 
   }
   
-  .view-details-btn {
+  .blog-post:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .post-title {
+    font-size: 1.2em;
+    color: goldenrod;
+    margin: 0 0 10px;
+  }
+  
+  .post-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .post-excerpt {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .read-more {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
     margin-top: 10px;
-    transition: background-color 0.3s;
+    padding: 8px 15px;
+    color: #fff;
+    background-color: cadetblue;
+    text-decoration: none;
+    border-radius: 4px;
   }
   
-  .view-details-btn:hover {
-    background-color: #0056b3;
+  .read-more:hover {
+    background-color: goldenrod;
   }
   
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
+  /* Responsive Media Queries */
 
-    .container {
-        padding: 20px;
-    }
-    .course-card {
-      padding: 15px;
+  @media (max-width: 1024px) {
+    section {
+      margin-top: 100px;
     }
   }
-  
+  @media (max-width: 768px) {
+    section {
+      margin-top: 100px;
+  }
+    .blog-post {
+      width: 100%;
+    }
 
+   
+  }
+
+  @media(max-width: 378px) {
+
+  }
+
+
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.newsletter h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(44, 92, 107);
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: goldenrod;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #d9534f;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .newsletter {
+      padding: 10px;
+    }
+    .newsletter h2 {
+        font-size: 25px;
+    }
+
+    .newsletter p {
+        font-size: 1.1em;
+    }
+
+    #email {
+        font-size: 1em;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+    }
+}
+  
   /*footer*/
 
 footer {
@@ -341,4 +456,8 @@ footer {
       flex-direction: column;
     }
   }
+  
+
+
+
   
