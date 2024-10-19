@@ -9,9 +9,37 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Social media bar styling */
+.social-bar {
+    background:  linear-gradient(145deg, #ecd5ce, #dfbdb5);
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-bar h3 {
+    color: rgb(44, 92, 107);
+    font-size: 18px; 
+    font-weight: normal; 
+}
+
+.social-bar a {
+    color: cadetblue; 
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-bar a:hover {
+    color: #ddd; 
+}
+/* Navbar styling (if needed for context) */
+
 header {
     width: 100%;
-    background-color: #333;
+    background: linear-gradient(145deg, #685050fa, #0c0b0a);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -25,16 +53,17 @@ header {
     color: white;
 }
 
-.navbar .logo a{
+.navbar .logo a {
     width: 100px;
     text-decoration: none;
-    color: goldenrod;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 
 }
 
-.navbar .logo a h1 {
-    font-size: 30px;
+.navbar .logo a h2 {
+    font-size: 25px;
+    color: rgb(137, 151, 155);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-links {
@@ -51,7 +80,9 @@ header {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 8px 15px;
+    font-weight: 100;
     transition: background 0.3s;
 }
 
@@ -507,7 +538,7 @@ header {
 /* CTA Section Styling */
 .cta-section {
     background-color: rgb(139, 66, 39); 
-    padding: 50px 30px;
+    padding: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -747,8 +778,8 @@ header {
 
 .service-container p {
     font-weight: 400;
-    font-size: 25px;
-    color: #4b5563;
+    font-size: 1.5rem;
+    color: #333;
     margin-bottom: 30px;
 }
 
@@ -842,7 +873,7 @@ header {
     }
 
     .service-container p {
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: 400;
     }
 
@@ -855,142 +886,13 @@ header {
     }
 
     .service-container p {
-        font-size: 18px;
+        font-size: 1rem;
         font-weight: 200;
     }
 }
 
 /*cost calculator*/
 
-.section_cal {
-    background: linear-gradient(145deg, #917f7a, #ff5733);
-    color: white;
-    padding: 40px 0;
-    text-align: left; 
-}
-.cost-calculator-container {
-    background-color: #f9f9f9;
-    padding: 30px;
-    max-width: 1000px;
-    margin: 50px auto;
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 40px;
-    color:rgb(44, 92, 107);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-p {
-    text-align: center;
-    color: #34495e;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 16px;
-    color: #34495e;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #d1d5db;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: cadetblue;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: goldenrod;
-}
-
-
-#estimated-cost {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align: center;
-    color: #2c3e50;
-}
-
-.service-questions {
-    display: none;
-}
-
-.submit-btn {
-    background-color: #27ae60;
-    width: 100%;
-    padding: 12px;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-.clear-btn {
-    background-color: #e74c3c;
-    width: 100%;
-    padding: 12px;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    .section_cal {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-   
-    .cost-calculator-container {
-        padding: 20px;
-    }
-
-    button {
-        font-size: 16px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 378px) {
-    .section_cal {
-        padding: 20px;
-    }
-}
 
 
 
@@ -1169,11 +1071,23 @@ button:hover {
         flex: 1 0 100%;
         max-width: 100%;
     }
+
+    
     .testimonials h2 {
         font-size: 25px;
     }
 }
 
+
+
+@media (max-width: 378px) {
+    .testimonials h2 {
+        font-size: 1.4rem;
+    }
+    .testimonial p {
+        font-size: 1rem;
+    }
+}
 
 
 
@@ -1261,6 +1175,17 @@ button[type="submit"]:hover {
     }
 }
 
+
+
+@media (max-width: 378px) {
+    .newsletter h2 {
+        font-size: 1.4rem;
+    }
+
+    .newsletter p {
+        font-size: 1rem;
+    }
+}
 
 /*Floating CTA*/
 .floating-icon {
@@ -1405,6 +1330,12 @@ footer {
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 378px) {
+    .footer-section h3 {
+        font-size: 1rem;
     }
   }
   
